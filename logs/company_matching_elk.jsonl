@@ -1,0 +1,7 @@
+{"@timestamp": "2025-12-06T15:20:50.886160", "event": "match_decision", "input": "Hernandez-sloan", "matched": "Montoya, Hernandez and Sloan Corp", "score": 0.7749999999999999, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-06T15:20:50.900686", "event": "match_decision", "input": "Crodova inc", "matched": "Cordova-Ingram Inc", "score": 0.8068965517241379, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-06T15:20:50.916552", "event": "match_decision", "input": "Molina llc", "matched": "Medina-Molina Corp", "score": 0.7714285714285714, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-06T15:20:50.932370", "event": "match_decision", "input": "Mclean-schultz", "matched": "Mclean-Schultz Inc", "score": 0.8625, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-06T15:20:50.961061", "event": "match_decision", "input": "Simpson, smith and martinez", "matched": "Simpson-Martinez LLC", "score": 0.7914893617021277, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-06T15:40:39.091696", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-06T15:50:24.490861", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}

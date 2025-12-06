@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "company-matcher"
+version = "0.1.0"
+description = "Company matcher"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+rapidfuzz = "*"
+requests = "*"
+faker = "*"
+metaphone = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
