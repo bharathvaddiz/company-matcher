@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/company_matcher.egg-info/PKG-INFO
+src/company_matcher.egg-info/SOURCES.txt
+src/company_matcher.egg-info/dependency_links.txt
+src/company_matcher.egg-info/top_level.txt
+tests/test_generator.py
+tests/test_matching.py
+tests/test_scoring.py

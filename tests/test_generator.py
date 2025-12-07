@@ -21,26 +21,21 @@ def test_generate_realistic_names_custom_n(monkeypatch):
 
 def test_dirty_name_phonetic_replacement(monkeypatch):
     # Input contains 'tech', 'services', 'limited' -> expect replacements
-    # Prepare random.random() sequence:
-    #  - one value per phonetic_variations key (12 keys) -> return 0.1 for matching keys, 0.9 otherwise
-    #  - vowel removal check -> 0.9 (no removal)
-    #  - small swap check -> 0.9 (no swap)
-    #  - final capitalization choice -> 0.9 (use n.capitalize())
-    seq = []
-    keys_order = [
-        "services", "solutions", "industries", "consulting", "global", "tech",
-        "technology", "company", "limited", "software", "systems", "corporation"
-    ]
-    for k in keys_order:
-        # return 0.1 for keys we want replaced, else 0.9
-        seq.append(0.1 if k in ("services", "tech", "limited") else 0.9)
-    seq.extend([0.9, 0.9, 0.9])  # vowel removal, swap, final cap
+    # random.random is only called for tokens that appear in the name, then
+    # for vowel removal, swap, and final capitalization. For
+    # 'Tech Services Limited' the phonetic checks will be performed in the
+    # order the dict is iterated but only when the substring is present. We
+    # therefore provide the sequence of random values corresponding to the
+    # three phonetic checks (services, tech, limited) followed by the
+    # vowel/swap/cap checks.
+    seq = [0.1, 0.1, 0.1, 0.9, 0.9, 0.9]  # 3 replacements, then no vowel removal/swap, final cap -> capitalize()
 
     def fake_random():
         return seq.pop(0)
 
     # random.choice should return specific replacements in the order encountered
     choices = ["sirvices", "teck", "limtied"]
+
     def fake_choice(variants):
         return choices.pop(0)
 
@@ -52,11 +47,10 @@ def test_dirty_name_phonetic_replacement(monkeypatch):
 
 
 def test_dirty_name_vowel_removal(monkeypatch):
-    # Ensure no phonetic replacements, but vowel removal happens
-    seq = [0.9] * 12  # phonetic checks -> no replacements
-    seq.append(0.1)   # vowel removal -> yes
-    seq.append(0.9)   # small swap -> no
-    seq.append(0.9)   # final capitalization path -> n.capitalize()
+    # Ensure no phonetic replacements (none of the phonetic tokens in 'Alpha'),
+    # but vowel removal happens. Only three random checks will be performed:
+    # vowel removal, small swap, and final capitalization.
+    seq = [0.1, 0.9, 0.9]  # vowel removal -> yes, then no swap, final capitalization path
 
     def fake_random():
         return seq.pop(0)

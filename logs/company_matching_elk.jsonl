@@ -5,3 +5,12 @@
 {"@timestamp": "2025-12-06T15:20:50.961061", "event": "match_decision", "input": "Simpson, smith and martinez", "matched": "Simpson-Martinez LLC", "score": 0.7914893617021277, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
 {"@timestamp": "2025-12-06T15:40:39.091696", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
 {"@timestamp": "2025-12-06T15:50:24.490861", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:36:42.138411", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:39:00.125914", "event": "match_decision", "input": "Maynard-hays", "matched": "Maynard-Hayes Corp", "score": 0.84, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:39:00.162195", "event": "match_decision", "input": "Harris llc", "matched": "Harrison-Parrish Corp", "score": 0.7548387096774193, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:39:00.212402", "event": "match_decision", "input": "Nelson, simmons and walters", "matched": "Simmons-Walters Holdings", "score": 0.7647058823529411, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:39:00.231534", "event": "match_decision", "input": "Beltran-ross", "matched": "Beltran, Dawson and Ross LLC", "score": 0.765, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:39:00.262041", "event": "match_decision", "input": "Brandt, huang and sullivan", "matched": "Sullivan, Branch and Campbell Holdings", "score": 0.7745454545454545, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T13:46:01.371121", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T15:13:59.769211", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}
+{"@timestamp": "2025-12-07T15:16:15.017065", "event": "match_decision", "input": "test", "matched": "West-Estrada Group", "score": 0.7090909090909091, "reason": "HIGH_ES_CONFIDENCE", "level": "ACCEPTED"}

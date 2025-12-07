@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/tests/conftest.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/tests/conftest.py" />
+              <option name="updatedContent" value="# tests/conftest.py&#10;# Ensure tests can import the package from the repo's `src/` layout&#10;import sys&#10;from pathlib import Path&#10;&#10;sys.path.insert(0, str(Path(__file__).resolve().parents[1] / &quot;src&quot;))&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

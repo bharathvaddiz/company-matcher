@@ -14,7 +14,7 @@ from .generator import generate_realistic_names, dirty_name
 
 if __name__ == "__main__":
     # Generate a few realistic company names (default: 5 here).
-    companies = generate_realistic_names(5)
+    companies = generate_realistic_names(50)
 
     # Create a corresponding list of "dirty" names (noisy variants) from the real names.
     dirties = [dirty_name(x) for x in companies]
